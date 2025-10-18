@@ -5,10 +5,10 @@
      <div class="row justify-content-center">
          <div class="col-md-8">
              <div class="text-center">
-                 <h1 class="display-4">Admin Dashboard</h1>
-                 <div class="alert alert-primary mt-4" role="alert">
-                     <h4 class="alert-heading">Welcome, Admin!</h4>
-                     <p>You have administrative privileges to manage the system.</p>
+                 <h1 class="display-4">Teacher Dashboard</h1>
+                 <div class="alert alert-success mt-4" role="alert">
+                     <h4 class="alert-heading">Welcome, Teacher!</h4>
+                     <p>You can manage your courses, view student progress, and access teaching tools here.</p>
                  </div>
              </div>
          </div>

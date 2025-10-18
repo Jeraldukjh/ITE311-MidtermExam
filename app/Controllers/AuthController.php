@@ -35,7 +35,17 @@ class AuthController extends BaseController
             'isLoggedIn' => true,
         ]);
 
-        return redirect()->to('/dashboard');
+        // Redirect based on user role
+        $role = $user['role'] ?? 'student';
+        switch ($role) {
+            case 'admin':
+                return redirect()->to('/admin/dashboard');
+            case 'teacher':
+                return redirect()->to('/teacher/dashboard');
+            case 'student':
+            default:
+                return redirect()->to('/announcements');
+        }
     }
 
     public function logout()

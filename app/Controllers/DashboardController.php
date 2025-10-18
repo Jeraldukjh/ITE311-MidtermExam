@@ -15,13 +15,13 @@ class DashboardController extends BaseController
         if ($role === 'admin') {
             return view('admin/dashboard', [
                 'title' => 'Admin Dashboard',
-                'name' => session()->get('user_name') ?? 'User'
+                'name' => session()->get('name') ?? 'User'
             ]);
         } else {
 
             return view('student/dashboard', [
                 'title' => 'Student Dashboard',
-                'name' => session()->get('user_name') ?? 'User'
+                'name' => session()->get('name') ?? 'User'
             ]);
         }
     }

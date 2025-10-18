@@ -7,7 +7,7 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <div>
                     <h1>Student Dashboard</h1>
-                    <p class="mb-0">Welcome back, <?= session()->get('name') ?>!</p>
+                    <p class="mb-0">Welcome back, <?= session()->get('user_name') ?>!</p>
             <div>
             <!-- Student-specific content -->
             <div class="row mt-4">
