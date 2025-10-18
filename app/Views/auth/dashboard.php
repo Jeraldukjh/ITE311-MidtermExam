@@ -14,6 +14,9 @@ switch (strtolower($role)) {
     case 'admin':
         echo view('admin/dashboard', ['name' => $name]);
         break;
+    case 'teacher':
+        echo view('teacher/dashboard', ['name' => $name]);
+        break;
     case 'student':
     default:
         echo view('student/dashboard', ['name' => $name]);

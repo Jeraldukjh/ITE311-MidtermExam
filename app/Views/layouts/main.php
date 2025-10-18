@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1;">
   <div class="container">
     <a class="navbar-brand" href="<?= base_url() ?>">Student Portal</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,30 +21,9 @@
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url('dashboard') ?>">Dashboard</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                <li><a class="dropdown-item" href="<?= base_url('admin/courses') ?>">Manage Courses</a></li>
-                <li><a class="dropdown-item" href="<?= base_url('admin/courses/create') ?>">Add New Course</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('admin/students') ?>">Students</a>
-            </li>
           <?php else: ?>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url('dashboard') ?>">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('courses') ?>">My Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('schedule') ?>">Class Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('grades') ?>">Grades</a>
             </li>
           <?php endif; ?>
         <?php endif; ?>
@@ -55,9 +34,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?= esc($session->get('user_name')) ?>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-              <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a></li>
             </ul>
           </li>

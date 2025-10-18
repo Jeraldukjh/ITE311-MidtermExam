@@ -13,14 +13,14 @@ class AnnouncementSeeder extends Seeder
             [
                 'title'      => 'Welcome to the Student Portal',
                 'content'    => 'Welcome to our new student portal! Here you can access your courses, view announcements, and manage your academic information. Please explore all the features available to you.',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d h:i:s A'),
+                'updated_at' => date('Y-m-d h:i:s A'),
             ],
             [
                 'title'      => 'Midterm Exam Schedule Released',
                 'content'    => 'The midterm examination schedule for Fall 2025 has been released. Please check your course pages for specific dates and times. Make sure to prepare adequately for your exams.',
-                'created_at' => date('Y-m-d H:i:s', strtotime('-3 days')),
-                'updated_at' => date('Y-m-d H:i:s', strtotime('-3 days')),
+                'created_at' => date('Y-m-d h:i:s A', strtotime('-3 days')),
+                'updated_at' => date('Y-m-d h:i:s A', strtotime('-3 days')),
             ]
         ];
 
